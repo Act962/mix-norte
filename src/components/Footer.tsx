@@ -1,25 +1,27 @@
-import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Instagram,
+  Facebook,
+  Linkedin,
+} from "lucide-react";
 
 export function Footer() {
-  const cities = [
-    "Teresina - PI",
-    "Parnaíba - PI", 
-    "São Luís - MA",
-    "Imperatriz - MA"
-  ];
+  const cities = ["Teresina - PI", "Parnaíba - PI", "São Luís - MA"];
 
   const quickLinks = [
     { label: "Início", href: "#home" },
     { label: "Quem Somos", href: "#about" },
     { label: "Serviços", href: "#services" },
-    { label: "Contato", href: "#contact" }
+    { label: "Contato", href: "#contact" },
   ];
 
   const services = [
     "Distribuição de Açaí",
     "Logística Especializada",
     "Consultoria Empresarial",
-    "Suporte Técnico"
+    "Suporte Técnico",
   ];
 
   return (
@@ -31,24 +33,33 @@ export function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">BN</span>
+                <span className="text-white font-bold text-lg">MN</span>
               </div>
-              <span className="text-2xl font-bold">Belo Norte</span>
+              <span className="text-2xl font-bold">Mix Norte Açaiteria</span>
             </div>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Desde 2017 levando o verdadeiro sabor do açaí paraense para empreendedores 
-              em todo Norte e Nordeste.
+              Desde 2017 levando o verdadeiro sabor do açaí paraense para
+              empreendedores em todo Norte e Nordeste.
             </p>
-            
+
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -60,8 +71,8 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-gray-300 hover:text-primary transition-colors"
                   >
                     {link.label}
@@ -91,12 +102,12 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-primary" />
                 <span className="text-gray-300">(86) 9 9999-9999</span>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-gray-300">contato@belonorte.com.br</span>
+                <span className="text-gray-300">contato@mixnorte.com.br</span>
               </div>
-              
+
               <div className="pt-4">
                 <h4 className="font-medium mb-3 text-white">Nossas Cidades:</h4>
                 <ul className="space-y-2">
@@ -118,14 +129,20 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 Belo Norte Distribuidora. Todos os direitos reservados.
+              © 2024 Mix Norte Açaiteria. Todos os direitos reservados.
             </div>
-            
+
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
                 Política de Privacidade
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
                 Termos de Uso
               </a>
             </div>

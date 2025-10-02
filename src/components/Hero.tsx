@@ -22,7 +22,7 @@ export function Hero() {
                 O Verdadeiro
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   {" "}
-                  Sabor do Norte
+                  Mix Norte
                 </span>
               </h1>
 

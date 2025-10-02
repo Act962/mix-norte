@@ -20,9 +20,13 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12  rounded-lg flex items-center justify-center">
-              <img src="logo.png" alt="Logo Belo Norte" />
+              <img
+                src="logo.png"
+                alt="Logo Mix Norte"
+                className="rounded-full object-cover"
+              />
             </div>
-            <span className="text-2xl font-bold text-primary">Belo Norte</span>
+            <span className="text-2xl font-bold text-primary">Mix Norte</span>
           </div>
 
           {/* Desktop Navigation */}
